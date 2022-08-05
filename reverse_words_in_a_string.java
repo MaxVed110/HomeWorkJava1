@@ -8,15 +8,15 @@ public class reverse_words_in_a_string {
         System.out.println(st);
     }
 
-    public static String reverseWords(String s){
+    public static String reverseWords(String s) {
         s = s.trim();
         List<String> str_list = new ArrayList<>();
         Collections.addAll(str_list, s.split(" "));
         System.out.println(str_list);
         for (int i = 0; i < str_list.size(); i++) {
-            if(str_list.get(i).equals("")){
-               str_list.remove(""); 
-               i--;
+            if (str_list.get(i).equals("")) {
+                str_list.remove("");
+                i--;
             }
         }
         System.out.println(str_list);
@@ -24,6 +24,4 @@ public class reverse_words_in_a_string {
         s = String.join(" ", str_list);
         return s;
     }
-
-
 }

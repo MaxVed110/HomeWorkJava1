@@ -57,5 +57,4 @@ public class duplicate_zeros {
             array[i] = vector.get(i);
         }
     }
-
 }
